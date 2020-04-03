@@ -1,0 +1,18 @@
+{
+  "name": "git-secrets-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "hide": "git-secrets hide --key='test1'",
+    "reveal": "git-secrets reveal --key='test1'",
+    "hide-prod": "env GIT_SECRETS_CONFIG=.git-secret.prod git-secrets hide --key='test2'",
+    "reveal-prod": "env GIT_SECRETS_CONFIG=.git-secret.prod git-secrets reveal --key='test2'",
+    "hide-stg": "env GIT_SECRETS_CONFIG=.git-secret.stg git-secrets hide --key='test3'",
+    "reveal-stg": "env GIT_SECRETS_CONFIG=.git-secret.stg git-secrets reveal --key='test3'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}
